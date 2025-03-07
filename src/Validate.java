@@ -1,6 +1,7 @@
 import java.util.*;
 public class Validate {
 	private static final Scanner sc = new Scanner(System.in);
+	
 	public static int checkInputLimit(int min, int max) {
 		while(true) {
 			try {

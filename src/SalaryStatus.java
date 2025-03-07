@@ -1,0 +1,3 @@
+enum SalaryStatus {
+	INCREASE, DECREASE;
+}

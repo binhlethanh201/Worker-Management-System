@@ -1,17 +1,18 @@
 import java.util.*;
-public class SalaryHistory {
+public class SalaryHistory{
 	private String workerId;
-	private double oldSalary, newSalary;
+	private double amount;
+	private SalaryStatus status;
 	private Date date;
 	
 	public SalaryHistory() {
 	}
-	
-	public SalaryHistory(String workerId, double oldSalary, double newSalary, Date date) {
+	public SalaryHistory(String workerId, double amount, SalaryStatus status) {
+		super();
 		this.workerId = workerId;
-		this.oldSalary = oldSalary;
-		this.newSalary = newSalary;
-		this.date = date;
+		this.amount = amount;
+		this.status = status;
+		this.date = new Date();
 	}
 	public String getWorkerId() {
 		return workerId;
@@ -19,17 +20,17 @@ public class SalaryHistory {
 	public void setWorkerId(String workerId) {
 		this.workerId = workerId;
 	}
-	public double getOldSalary() {
-		return oldSalary;
+	public double getAmount() {
+		return amount;
 	}
-	public void setOldSalary(double oldSalary) {
-		this.oldSalary = oldSalary;
+	public void setAmount(double amount) {
+		this.amount = amount;
 	}
-	public double getNewSalary() {
-		return newSalary;
+	public SalaryStatus getStatus() {
+		return status;
 	}
-	public void setNewSalary(double newSalary) {
-		this.newSalary = newSalary;
+	public void setStatus(SalaryStatus status) {
+		this.status = status;
 	}
 	public Date getDate() {
 		return date;
@@ -37,6 +38,7 @@ public class SalaryHistory {
 	public void setDate(Date date) {
 		this.date = date;
 	}
+	
 	
 	
 	
